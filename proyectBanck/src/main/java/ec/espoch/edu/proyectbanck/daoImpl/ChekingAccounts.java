@@ -4,11 +4,13 @@
  */
 package ec.espoch.edu.proyectbanck.daoImpl;
 
+import ec.espoch.edu.proyectbanck.dao.ChekingAccountsDAO;
+
 /**
  *
  * @author HP
  */
-public class ChekingAccounts extends Accounts {
+public class ChekingAccounts extends Accounts implements ChekingAccountsDAO {
 
     @Override
     public float deposit(float value) {

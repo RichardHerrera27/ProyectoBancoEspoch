@@ -8,6 +8,13 @@ package ec.espoch.edu.proyectbanck.dao;
  *
  * @author HP
  */
-public interface SavingAccount {
-    
+public interface SavingAccountsDAO {
+
+    public float deposit(float value);
+
+    public float withdraw(float value);
+
+    public float calculateMonthlyInterest();
+
+    public String showDatos();
 }

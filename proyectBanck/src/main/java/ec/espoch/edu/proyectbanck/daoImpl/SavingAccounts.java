@@ -1,6 +1,8 @@
 package ec.espoch.edu.proyectbanck.daoImpl;
 
-public class SavingAccounts extends Accounts {
+import ec.espoch.edu.proyectbanck.dao.ChekingAccountsDAO;
+
+public class SavingAccounts extends Accounts implements ChekingAccountsDAO{
 
     @Override
     public float deposit(float value) {
