@@ -6,7 +6,7 @@ public class Account {
     protected int numberDeposit = 0;
     protected int numberWithdraw = 0;
     protected float anualInteres;
-    protected float monthlyFec = 0.0f;
+    protected float monthlyFee = 0.0f;
 
     public Account() {
     }
@@ -20,8 +20,8 @@ public class Account {
         return balance;
     }
 
-    public void setBalance(int balance) {
-        this.balance = balance;
+    public void setBalance(float balance) {
+        this.balance = (int) balance;
     }
 
     public int getNumberDeposit() {
@@ -49,16 +49,16 @@ public class Account {
     }
 
     public float getMonthlyFec() {
-        return monthlyFec;
+        return monthlyFee;
     }
 
     public void setMonthlyFec(float monthlyFec) {
-        this.monthlyFec = monthlyFec;
+        this.monthlyFee = monthlyFec;
     }
 
     @Override
     public String toString() {
-        return "Account{" + "balance=" + balance + ", numberDeposit=" + numberDeposit + ", numberWithdraw=" + numberWithdraw + ", anualInteres=" + anualInteres + ", monthlyFec=" + monthlyFec + '}';
+        return "Account{" + "balance=" + balance + ", numberDeposit=" + numberDeposit + ", numberWithdraw=" + numberWithdraw + ", anualInteres=" + anualInteres + ", monthlyFec=" + monthlyFee + '}';
     }
 
 }

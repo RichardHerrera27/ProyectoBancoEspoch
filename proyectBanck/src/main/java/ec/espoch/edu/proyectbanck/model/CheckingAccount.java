@@ -2,7 +2,7 @@ package ec.espoch.edu.proyectbanck.model;
 
 public class CheckingAccount extends Account {
 
-    protected float overdraft = 0.0f;
+    protected float overdraft = 0.0f; //sobregiro
 
     public CheckingAccount(int balance, float anualInteres) {
         super(balance, anualInteres);
